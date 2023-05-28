@@ -28,16 +28,14 @@ require_once 'header.php';
         <h3>Tarifs</h3>
         <table>
             <tr>
-                <td>3 joueurs</td>
-                <td>4 joueurs</td>
-                <td>5 joueurs</td>
-                <td>6 joueurs</td>
+                <?php foreach (PRICE["tombeau"] as $players => $player_price) : ?>
+                <td><?= $players ?> joueurs</td>
+                <?php endforeach; ?>
             </tr>
             <tr>
-                <td>105 euros (35€/personne)</td>
-                <td>132 euros (33€/personne)</td>
-                <td>150 euros (30€/personne)</td>
-                <td>168 euros (28€/personne)</td>
+                <?php foreach (PRICE["tombeau"] as $players => $player_price) : ?>
+                <td><?= total_price($players, $player_price) ?> euros (<?= $player_price ?>€/personne)</td>
+                <?php endforeach; ?>
             </tr>
         </table>
     </div>
@@ -59,16 +57,14 @@ require_once 'header.php';
         <h3>Tarifs</h3>
         <table>
             <tr>
-                <td>4 joueurs</td>
-                <td>5 joueurs</td>
-                <td>6 joueurs</td>
-                <td>7 joueurs</td>
+                <?php foreach (PRICE["prophetie"] as $players => $player_price) : ?>
+                <td><?= $players ?> joueurs</td>
+                <?php endforeach; ?>
             </tr>
             <tr>
-                <td>140 euros (38€/personne)</td>
-                <td>175 euros (35€/personne)</td>
-                <td>192 euros (32€/personne)</td>
-                <td>210 euros (30€/personne)</td>
+                <?php foreach (PRICE["prophetie"] as $players => $player_price) : ?>
+                <td><?= total_price($players, $player_price) ?> euros (<?= $player_price ?>€/personne)</td>
+                <?php endforeach; ?>
             </tr>
         </table>
     </div>
@@ -90,16 +86,14 @@ require_once 'header.php';
         <h3>Tarifs</h3>
         <table>
             <tr>
-                <td>6 joueurs</td>
-                <td>7 joueurs</td>
-                <td>8 joueurs</td>
-                <td>9 joueurs</td>
+                <?php foreach (PRICE["quartier"] as $players => $player_price) : ?>
+                <td><?= $players ?> joueurs</td>
+                <?php endforeach; ?>
             </tr>
             <tr>
-                <td>228 euros (38€/personne)</td>
-                <td>245 euros (35€/personne)</td>
-                <td>256 euros (32€/personne)</td>
-                <td>270 euros (30€/personne)</td>
+                <?php foreach (PRICE["quartier"] as $players => $player_price) : ?>
+                <td><?= total_price($players, $player_price) ?> euros (<?= $player_price ?>€/personne)</td>
+                <?php endforeach; ?>
             </tr>
         </table>
     </div>
@@ -121,16 +115,14 @@ require_once 'header.php';
         <h3>Tarifs</h3>
         <table>
             <tr>
-                <td>5 joueurs</td>
-                <td>6 joueurs</td>
-                <td>7 joueurs</td>
-                <td>8 joueurs</td>
+                <?php foreach (PRICE["enigma"] as $players => $player_price) : ?>
+                <td><?= $players ?> joueurs</td>
+                <?php endforeach; ?>
             </tr>
             <tr>
-                <td>175 euros (35€/personne)</td>
-                <td>192 euros (32€/personne)</td>
-                <td>210 euros (30€/personne)</td>
-                <td>224 euros (28€/personne)</td>
+                <?php foreach (PRICE["enigma"] as $players => $player_price) : ?>
+                <td><?= total_price($players, $player_price) ?> euros (<?= $player_price ?>€/personne)</td>
+                <?php endforeach; ?>
             </tr>
         </table>
     </div>

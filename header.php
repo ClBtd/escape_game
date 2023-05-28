@@ -1,3 +1,8 @@
+<?php
+require_once 'variables.php';
+require_once 'functions.php';
+?>
+
 <html>
     
     <head>
