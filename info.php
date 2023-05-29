@@ -1,11 +1,35 @@
 <?php
 $title = "Informations pratiques";
 $description = "Trouver et contacter Les Dédales du Temps";
-require_once 'variables.php';
-require_once 'functions.php';
 require_once 'header.php';
 date_default_timezone_set('Europe/Paris');
 $current_day = date('N') - 1;
+
+if (!empty($_POST)) {
+    $email = htmlspecialchars($_POST['email']);
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $message = "Votre message nous a bien été transmis, nous reviendrons vers vous dès que possible.";
+    }
+    else {
+        $message = "L'email entré n'est pas valide, veuillez remplir à nouveau le formulaire de contact.";
+    }
+}
+
+if (isset($_GET["mission"]) && isset($_GET["players"])) {
+
+    $mission = PRICE[htmlspecialchars($_GET["mission"])];
+    $players = htmlspecialchars($_GET["players"]);
+    $individual_price = $mission[$players];
+
+    if ($individual_price === NULL) {
+        $error = true;
+    } 
+
+    else {
+        $total_price = $individual_price * $players;
+    }
+
+}
 ?>
 
 <main>
@@ -44,9 +68,9 @@ $current_day = date('N') - 1;
         <ul>
             <?php foreach (DAYS as $key => $day) : 
                 if ($key === $current_day) : ?>
-                    <li><mark><?= $day ?> : <?= show_time(TIME[$key])?></mark></li>
+                    <li><mark><?= $day ?> : <?=show_time(TIME[$key])?></mark></li>
                 <?php else : ?>
-                    <li><?= $day ?> : <?= show_time(TIME[$key])?></li>
+                    <li><?= $day ?> : <?=show_time(TIME[$key])?></li>
                 <?php endif ;
                 endforeach ; ?>
         </ul>
@@ -56,23 +80,56 @@ $current_day = date('N') - 1;
     <div id="contact" class="infos">
         <h2>Nous contacter</h2>
         <p>Vous souhaitez réserver une session ? Vous souhaitez organiser un évènement dans nos salles ? Vous avez une question ou une remarque ? N'hésitez pas à nous contacter, nous reviendrons vers vous le plus rapidement possible.</p>
-        <form action="info.php" method="post">
+        <form action="info.php#contact" method="post">
             <label for="name">Votre nom :</label>
-            <input type="text" title="name" id="name" required>
+            <input type="text" name="name" id="name" required>
             <br>
             <label for="email">Votre addresse email :</label>
-            <input type="email" title="email" id="email" required>
+            <input type="email" name="email" id="email" required>
             <br>
             <label for="phone">Votre numéro de téléphone (optionnel) :</label>
-            <input type="tel" title="phone" id="phone">
+            <input type="tel" name="phone" id="phone">
             <br>
             <label for="message">Votre message :</label>
             <textarea name="message" id="message" cols="100" rows="5"></textarea>
+            <br>
+            <button type="submit">Envoyer</button>
         </form>
+        <?php if (isset($message)) : ?>
+            <p><?= $message ?></p>
+        <?php endif; ?>
     </div>
 
     <div id="tarifs" class="infos">
-
+        <h2>Tarifs</h2>
+        <p>Nos tarifs varient en fonction de la durée de la mission et du nombre de joueurs. Plus vous êtes nombreux et moins c'est cher ! Choisissez la mission qui vous intéresse et le nombre de personnes afin d'en connaitre le prix.</p>
+        <form action="info.php#tarifs" method="get">
+            <label for="mission">Choisissez la mission qui vous intéresse :</label>
+            <select name="mission" id="mission">
+                <option value="tombeau">Le tombeau perdu d'Isis</option>
+                <option value="prophetie">La prophétie de l'Ordre du Temple</option>
+                <option value="quartier">Les mystères du quartier des ombres</option>
+                <option value="enigma">Opération Enigma</option>
+            </select>
+            <br>
+            <label for="players">Sélectionner le nombre de joueurs :</label>
+            <select name="players" id="players">
+                <option value="3">3 joueurs</option>
+                <option value="4">4 joueurs</option>
+                <option value="5">5 joueurs</option>
+                <option value="6">6 joueurs</option>
+                <option value="7">7 joueurs</option>
+                <option value="8">8 joueurs</option>
+                <option value="9">9 joueurs</option>
+            </select>
+            <br>
+            <button type="submit">Calculer le tarif</button>
+            <?php if (isset($total_price)) : ?>
+                <p>Votre mission vous coûtera <?=$total_price?>€, soit <?=$individual_price?>€ par personne.</p>
+            <?php elseif (isset($error)) : ?>
+                <p>Cette mission n'est pas adaptée au nombre de joureurs sélectionné. Veuillez changer le nombre de joueurs ou choisir une autre mission.</p>
+            <?php endif; ?>
+        </form>
     </div>
 
 </main>
