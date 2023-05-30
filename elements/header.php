@@ -17,10 +17,13 @@ require_once 'functions.php';
     </head>
 
     <body>
-        
+            
             <header>
-                <img src="img/logo.png" alt="Logo de Dédales du temps">
-                <h1>Les dédales du temps</h1>
+                <div class="contentWraper">
+                <div class ="title">
+                    <img src="img/logo.png" alt="Logo de Dédales du temps">
+                    <h1>Les dédales du temps</h1>
+                </div>
                 <nav>
                     <ul>
                         <li>
@@ -28,7 +31,7 @@ require_once 'functions.php';
                         </li>
                         <li>
                             <a href="mission.php" title="Missions">Mission</a>
-                            <ul class="deroulant">
+                            <ul class="folded">
                                 <li>
                                     <a href="mission.php#tombeau">Le tombeau perdu d'Isis</a>
                                 </li>
@@ -45,7 +48,7 @@ require_once 'functions.php';
                         </li>
                         <li>
                             <a href="info.php" title="Informations pratiques">Contact</a>
-                            <ul>
+                            <ul class="folded">
                                 <li>
                                     <a href="info.php#localisation">Nous trouver</a>
                                 </li>
@@ -62,4 +65,6 @@ require_once 'functions.php';
                         </li>
                     </ul>
                 </nav>
+                </div>
             </header>
+            

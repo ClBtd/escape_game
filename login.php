@@ -26,13 +26,15 @@ if (authentification()) {
     exit();
 }
 ?>
-<h1>Authentification</h1>
+<main>
 
-<p>Pour accéder aux classements, veuillez sélectionnez la mission à laquelle vous avez participé. Puis, entrez votre nom d'équipe et le code qui vous a été fourni.</p>
+    <h1>Authentification</h1>
 
-<?php if ($error !== NULL) : ?>
-    <p>Nom d'équipe et/ou code incorrect. Veuillez réessayer.</p>
-<?php endif; ?>
+    <p>Pour accéder aux classements, veuillez sélectionnez la mission à laquelle vous avez participé. Puis, entrez votre nom d'équipe et le code qui vous a été fourni.</p>
+
+    <?php if ($error !== NULL) : ?>
+        <p>Nom d'équipe et/ou code incorrect. Veuillez réessayer.</p>
+    <?php endif; ?>
 
     <form method="post" action="">
         <label for="mission">Mission :</label>
@@ -51,5 +53,7 @@ if (authentification()) {
         <br>
         <button type="submit">Envoyer</button>
     </form>
+
+</main>
 
 <?php require 'elements/footer.php'; ?>
