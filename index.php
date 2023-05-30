@@ -1,7 +1,7 @@
 <?php 
 $title = "Les Dédales du Temps";
 $description = "Page d'accueil de l'escape game Les Dédales du temps";
-require_once "header.php";
+require_once "elements/header.php";
 ?>
  <main>
 
@@ -61,4 +61,4 @@ require_once "header.php";
 
 
 
-<?php require_once "footer.php"; ?>
+<?php require_once "elements/footer.php"; ?>

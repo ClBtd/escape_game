@@ -1,7 +1,7 @@
 <?php
 $title = "Informations pratiques";
 $description = "Trouver et contacter Les Dédales du Temps";
-require_once 'header.php';
+require_once 'elements/header.php';
 date_default_timezone_set('Europe/Paris');
 $current_day = date('N') - 1;
 
@@ -134,4 +134,4 @@ if (isset($_GET["mission"]) && isset($_GET["players"])) {
 
 </main>
 
-<?php require_once 'footer.php'; ?>
+<?php require_once 'elements/footer.php'; ?>

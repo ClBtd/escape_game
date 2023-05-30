@@ -1,7 +1,7 @@
 <?php 
 $title="Missions";
 $description="Découvrez les différentes missions proposées aux Dédales du Temps.";
-require_once 'header.php';
+require_once 'elements/header.php';
 ?>
 
 <main>
@@ -129,4 +129,4 @@ require_once 'header.php';
 
 </main>
 
-<?php require_once 'footer.php'; ?>
+<?php require_once 'elements/footer.php'; ?>
