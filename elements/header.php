@@ -19,11 +19,12 @@ require_once 'functions.php';
     <body>
             
             <header>
+
                 <div class="contentWraper">
-                <div class ="title">
                     <img src="img/logo.png" alt="Logo de Dédales du temps">
-                    <h1>Les dédales du temps</h1>
+                    <h1 class="title">les dedales du temps</h1>
                 </div>
+
                 <nav>
                     <ul>
                         <li>
@@ -65,6 +66,6 @@ require_once 'functions.php';
                         </li>
                     </ul>
                 </nav>
-                </div>
+
             </header>
             

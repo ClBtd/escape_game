@@ -5,20 +5,21 @@ require_once "elements/header.php";
 ?>
  <main>
 
-    <div class="accroche">
+    <div class="intro">
         <img src="img/logo.png" alt="Logo des dédales du temps">
         <h1>Les dédales du temps</h1>
+        <h3>Escape Game Lyon</h3>
         <h2>Saurez-vous échapper à votre destin et revenir dans le présent ?</h2>
     </div>
 
-    <div class="presentation_salle">
+    <div class="presentation">
         <p>Bienvenue dans <strong>Les Dédales du Temps</strong>, une expérience immersive qui vous transporte à travers les méandres du passé ! Préparez-vous à un voyage captivant où chaque seconde compte.</p>
         <p>Votre mission est simple, mais périlleuse : affronter les épreuves du passé qui vous attendent pour revenir sains et saufs dans le présent. Une erreur, un paradoxe non résolu et le futur tel que vous le connaissez pourrait être à jamais modifié. Votre équipe devra faire preuve de logique, d'ingéniosité et de coopération pour résoudre les énigmes, déjouer les pièges.</p>
         <p>Explorez des décors extraordinaires qui vous transporteront selon votre choix dans vers les pharaons égyptiens, auprès des templiers du Moyen Âge, dans les ruelles londoniennes de l'époque victorienne ou au cœur de la seconde guerre mondiale. Chaque salle est un véritable tableau vivant, une fenêtre ouverte sur des époques révolues où l'atmosphère et les détails historiques sont minutieusement reconstitués.</p>
         <p>Réunissez votre équipe, préparez-vous à franchir les frontières temporelles et lancez-vous dans l'expérience inoubliable des dédales du temps, où les énigmes n'attendent que d'être résolues.</p>
     </div>
 
-    <div class="presentation_escape">
+    <div class="presentation">
         <h3>Etes vous prêts à relever le défi ?</h3>
         <ul>
             <li><strong>Temps limité</strong> : Selon la salle, vous ne disposez que d'une à deux heures pour résoudre les énigmes et vous échapper, alors faites-vite !</li>
@@ -29,7 +30,7 @@ require_once "elements/header.php";
         </ul>
     </div>
 
-    <div class="presentation_missions">
+    <div class="presentation">
         <h3>Nos missions</h3>
         <div>
             <h4>Le tombeau perdu d'Isis</h4>
