@@ -40,45 +40,9 @@ require 'elements/header.php';
                 <td>Equipe</td>
                 <td>Temps</td>
             </tr>
-            <?php foreach ($tombeau as $k => $rank) : 
-                if ($rank[0] === $_SESSION['team_name']) : ?>
-                    <tr class="current">
-                        <td><?=$k + 1?></td>
-                        <td><?=$rank[0]?></td>
-                        <td><?=$rank[2]?></td>
-                    </tr>
-                <?php else : 
-                    switch ($k): 
-                        case 0: ?>
-                            <tr class="first">
-                                <td><?=$k + 1?></td>
-                                <td><?=$rank[0]?></td>
-                                <td><?=$rank[2]?></td>
-                            </tr>
-                            <?php break;
-                        case 1: ?>
-                            <tr class="second">
-                                <td><?=$k + 1?></td>
-                                <td><?=$rank[0]?></td>
-                                <td><?=$rank[2]?></td>
-                            </tr>
-                            <?php break;
-                        case 2: ?>
-                            <tr class="third">
-                                <td><?=$k + 1?></td>
-                                <td><?=$rank[0]?></td>
-                                <td><?=$rank[2]?></td>
-                            </tr>
-                            <?php break;
-                        default: ?>
-                            <tr>
-                                <td><?=$k + 1?></td>
-                                <td><?=$rank[0]?></td>
-                                <td><?=$rank[2]?></td>
-                            </tr>
-                    <?php endswitch;
-                endif;
-            endforeach; ?>
+            <?php foreach ($tombeau as $k => $rank) {
+                echo ranking_table($k, $rank, $_SESSION['team_name']); 
+            } ?>
         </table>
     </div>
 
@@ -90,45 +54,9 @@ require 'elements/header.php';
                 <td>Equipe</td>
                 <td>Temps</td>
             </tr>
-            <?php foreach ($prophetie as $k => $rank) : 
-                if ($rank[0] === $_SESSION['team_name']) : ?>
-                    <tr class="current">
-                        <td><?=$k + 1?></td>
-                        <td><?=$rank[0]?></td>
-                        <td><?=$rank[2]?></td>
-                    </tr>
-                <?php else : 
-                    switch ($k): 
-                        case 0: ?>
-                            <tr class="first">
-                                <td><?=$k + 1?></td>
-                                <td><?=$rank[0]?></td>
-                                <td><?=$rank[2]?></td>
-                            </tr>
-                            <?php break;
-                        case 1: ?>
-                            <tr class="second">
-                                <td><?=$k + 1?></td>
-                                <td><?=$rank[0]?></td>
-                                <td><?=$rank[2]?></td>
-                            </tr>
-                            <?php break;
-                        case 2: ?>
-                            <tr class="third">
-                                <td><?=$k + 1?></td>
-                                <td><?=$rank[0]?></td>
-                                <td><?=$rank[2]?></td>
-                            </tr>
-                            <?php break;
-                        default: ?>
-                            <tr>
-                                <td><?=$k + 1?></td>
-                                <td><?=$rank[0]?></td>
-                                <td><?=$rank[2]?></td>
-                            </tr>
-                    <?php endswitch;
-                endif;
-            endforeach; ?>
+            <?php foreach ($prophetie as $k => $rank) {
+                echo ranking_table($k, $rank, $_SESSION['team_name']); 
+            } ?>
         </table>
     </div>
 
@@ -140,45 +68,9 @@ require 'elements/header.php';
                 <td>Equipe</td>
                 <td>Temps</td>
             </tr>
-            <?php foreach ($quartier as $k => $rank) : 
-                if ($rank[0] === $_SESSION['team_name']) : ?>
-                    <tr class="current">
-                        <td><?=$k + 1?></td>
-                        <td><?=$rank[0]?></td>
-                        <td><?=$rank[2]?></td>
-                    </tr>
-                <?php else : 
-                    switch ($k): 
-                        case 0: ?>
-                            <tr class="first">
-                                <td><?=$k + 1?></td>
-                                <td><?=$rank[0]?></td>
-                                <td><?=$rank[2]?></td>
-                            </tr>
-                            <?php break;
-                        case 1: ?>
-                            <tr class="second">
-                                <td><?=$k + 1?></td>
-                                <td><?=$rank[0]?></td>
-                                <td><?=$rank[2]?></td>
-                            </tr>
-                            <?php break;
-                        case 2: ?>
-                            <tr class="third">
-                                <td><?=$k + 1?></td>
-                                <td><?=$rank[0]?></td>
-                                <td><?=$rank[2]?></td>
-                            </tr>
-                            <?php break;
-                        default: ?>
-                            <tr>
-                                <td><?=$k + 1?></td>
-                                <td><?=$rank[0]?></td>
-                                <td><?=$rank[2]?></td>
-                            </tr>
-                    <?php endswitch;
-                endif;
-            endforeach; ?>
+            <?php foreach ($quartier as $k => $rank) {
+                echo ranking_table($k, $rank, $_SESSION['team_name']); 
+            } ?>
         </table>
     </div>
 
@@ -190,45 +82,9 @@ require 'elements/header.php';
                 <td>Equipe</td>
                 <td>Temps</td>
             </tr>
-            <?php foreach ($enigma as $k => $rank) : 
-                if ($rank[0] === $_SESSION['team_name']) : ?>
-                    <tr class="current">
-                        <td><?=$k + 1?></td>
-                        <td><?=$rank[0]?></td>
-                        <td><?=$rank[2]?></td>
-                    </tr>
-                <?php else : 
-                    switch ($k): 
-                        case 0: ?>
-                            <tr class="first">
-                                <td><?=$k + 1?></td>
-                                <td><?=$rank[0]?></td>
-                                <td><?=$rank[2]?></td>
-                            </tr>
-                            <?php break;
-                        case 1: ?>
-                            <tr class="second">
-                                <td><?=$k + 1?></td>
-                                <td><?=$rank[0]?></td>
-                                <td><?=$rank[2]?></td>
-                            </tr>
-                            <?php break;
-                        case 2: ?>
-                            <tr class="third">
-                                <td><?=$k + 1?></td>
-                                <td><?=$rank[0]?></td>
-                                <td><?=$rank[2]?></td>
-                            </tr>
-                            <?php break;
-                        default: ?>
-                            <tr>
-                                <td><?=$k + 1?></td>
-                                <td><?=$rank[0]?></td>
-                                <td><?=$rank[2]?></td>
-                            </tr>
-                    <?php endswitch;
-                endif;
-            endforeach; ?>
+            <?php foreach ($enigma as $k => $rank) {
+                echo ranking_table($k, $rank, $_SESSION['team_name']); 
+            } ?>
         </table>
     </div>
 

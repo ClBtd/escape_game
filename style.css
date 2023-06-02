@@ -168,6 +168,14 @@ li:hover .folded {
     font-weight: normal;
 }
 
+.ranking {
+    color: #8b8988;
+}
+
+.ranking:hover {
+    text-shadow: 3px 3px 5px #8b8988;
+}
+
 footer {
     height: clamp(125px, 15%, 500px);
 }
@@ -204,9 +212,13 @@ footer a:hover {
     line-height: 1.5em;
 }
 
-
 main {
-    padding-top: 7%;
+    padding-top: 3%;
+}
+
+.intro {
+    background-image: url('img/door.jpg');
+    background-size: cover;
 }
 
 .current {

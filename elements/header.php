@@ -62,7 +62,7 @@ require_once 'functions.php';
                             </ul>
                         </li>
                         <li>
-                            <a href="login.php" title="Classement">Classement</a>
+                            <a href="login.php" title="Classement" class="ranking">Classement</a>
                         </li>
                     </ul>
                 </nav>

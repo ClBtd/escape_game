@@ -7,8 +7,8 @@ require_once "elements/header.php";
 
     <div class="intro">
         <img src="img/logo.png" alt="Logo des dédales du temps">
-        <h1>Les dédales du temps</h1>
-        <h3>Escape Game Lyon</h3>
+        <h1 class="title">les dedales du temps</h1>
+        <h1 class="title">escape game lyon</h3>
         <h2>Saurez-vous échapper à votre destin et revenir dans le présent ?</h2>
     </div>
 
@@ -40,7 +40,7 @@ require_once "elements/header.php";
         </div>
         <div>
             <h4>La prophétie de l'Ordre du Temple</h4>
-            <img src="img/prophétie.jpg" alt="Heaume de chevalier">
+            <img src="img/prophetie.jpg" alt="Heaume de chevalier">
             <p>Capturés par l'Ordre du Temple en raison d'une prophétie mystérieuse, vous devez résoudre des énigmes ancestrales, percer les secrets de l'Ordre et vous échapper des donjons avant que la prophétie ne s'accomplisse.</p>
             <a href="">Découvrir</a>
         </div>
