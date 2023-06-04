@@ -76,6 +76,32 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Rubik';
+    src: url('fonts/Rubik-Regular.eot');
+    src: url('fonts/Rubik-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Rubik-Regular.woff2') format('woff2'),
+        url('fonts/Rubik-Regular.woff') format('woff'),
+        url('fonts/Rubik-Regular.ttf') format('truetype'),
+        url('fonts/Rubik-Regular.svg#Rubik-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('fonts/Rubik-Bold.eot');
+    src: url('fonts/Rubik-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Rubik-Bold.woff2') format('woff2'),
+        url('fonts/Rubik-Bold.woff') format('woff'),
+        url('fonts/Rubik-Bold.ttf') format('truetype'),
+        url('fonts/Rubik-Bold.svg#Rubik-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -97,12 +123,12 @@ header, footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: #d9d9d8;
+    background-color: #bfbabc;
 }
 
 header {
     position: fixed;
-    height: clamp(50px, 12%, 500px);
+    height: clamp(50px, 12vh, 500px);
 }
 
 .contentWraper {
@@ -116,7 +142,7 @@ header img, footer img {
 }
 
 header h1 {
-    font-size: clamp(40px, 8vmin, 90px);
+    font-size: clamp(40px, 8vh, 90px);
     align-self: center;
 }
 
@@ -136,7 +162,7 @@ nav ul {
 
 nav a {
     font-weight: 500;
-    font-size: clamp(20px, 3vmin, 70px);
+    font-size: clamp(20px, 3vh, 70px);
     padding: 2.5vmin;
 }
 
@@ -148,8 +174,8 @@ nav a:hover {
     display: none;
     position: fixed;
     border: 1px black solid;
-    border-radius: 3px;
-    background-color: #d9d9d8;
+    border-radius: 5px;
+    background-color: #bfbabc;
     margin: 2vmin;
     padding: 5px 0;
 }
@@ -164,7 +190,7 @@ li:hover .folded {
 }
 
 .folded a {
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: normal;
 }
 
@@ -213,12 +239,53 @@ footer a:hover {
 }
 
 main {
-    padding-top: 3%;
+    padding-top: clamp(50px, 12vh, 500px);
+    background-color: #faf2e7;
 }
 
 .intro {
-    background-image: url('img/door.jpg');
+    background-image: url('img/cellar.jpg');
     background-size: cover;
+    color: #eae0df;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: clamp(80px, 15vh, 500px);
+    padding: 6vh 0 0 0;
+}
+
+.intro h2 {
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-size: clamp(40px, 6vh, 300px);
+    padding: 6vh 0 6vh 0;
+}
+
+.intro h3 {
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-size: clamp(40px, 6vh, 300px);
+    padding: 6vh 0 6vh 0;
+    font-weight: normal;
+}
+
+.presentation {
+    text-align: center;
+    padding: 6vh 12vw;
+}
+
+.presentation p, .presentation li {
+    margin: 20px 0;
+    font-size: 1.4em;
+    line-height: 1.7em;
+}
+
+.presentation .title {
+    font-size: 1.4em;
 }
 
 .current {
@@ -261,5 +328,19 @@ main {
     }
     .contact img {
         display: none;
+    }
+
+    main {
+        padding-top: 0;
+    }
+
+    .intro h1 {
+        font-size: clamp(50px, 10vh, 250px);
+        padding: 4vh 0 0 0;
+    }
+
+    .intro h2, .intro h3 {
+        font-size: clamp(20px, 4vh, 1000px);
+        padding: 4vh 0 2vh 0;
     }
 }
