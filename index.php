@@ -17,15 +17,18 @@ require_once "elements/header.php";
         <p>Explorez des décors extraordinaires qui vous transporteront selon votre choix dans vers les pharaons égyptiens, auprès des templiers du Moyen Âge, dans les ruelles londoniennes de l'époque victorienne ou au cœur de la seconde guerre mondiale. Chaque salle est un véritable tableau vivant, une fenêtre ouverte sur des époques révolues où l'atmosphère et les détails historiques sont minutieusement reconstitués.</p>
     </div>
 
-    <div class="presentation">
-        <h3>Etes vous prêts à relever le défi ?</h3>
-        <ul>
-            <li><strong>Temps limité</strong> : Selon la salle, vous ne disposez que d'une à deux heures pour résoudre les énigmes et vous échapper, alors faites-vite !</li>
-            <li><strong>Enquête</strong> : A vous de découvrir tous les indices cachés, les objets et les symboles pour vous en sortir.</li>
-            <li><strong>Logique et réflexion</strong> :  Réveillez la pensée logique et l'esprit de déduction et d'analyse qui sommeillent en vous pour résoudre les énigmes.</li>
-            <li><strong>Collaboration</strong> : Travaillez en équipe, en utilisant leurs compétences individuelles de chacun et en communiquant efficacement pour surmonter les défis.</li>
-            <li><strong>Immersion</strong> : Plongez dans le passé, avec des ambiances et des histoires captivantes, pour découvrir des univers uniques.</li>
-        </ul>
+    <div class="presentation" id="escape">
+        <img src="img/logo.png" alt="Logo des Dédales du temps">
+        <div>
+            <h3>Êtes vous prêts à relever le défi ?</h3>
+            <ul>
+                <li><strong>temps limite</strong> : Selon la salle, vous ne disposez que d'une à deux heures pour résoudre les énigmes et vous échapper, alors faites-vite !</li>
+                <li><strong>enquete</strong> : A vous de découvrir tous les indices cachés, les objets et les symboles pour vous en sortir.</li>
+                <li><strong>logique et reflexion</strong> :  Réveillez la pensée logique et l'esprit de déduction et d'analyse qui sommeillent en vous pour résoudre les énigmes.</li>
+                <li><strong>collaboration</strong> : Travaillez en équipe, en utilisant leurs compétences individuelles de chacun et en communiquant efficacement pour surmonter les défis.</li>
+                <li><strong>immersion</strong> : Plongez dans le passé, avec des ambiances et des histoires captivantes, pour découvrir des univers uniques.</li>
+            </ul>
+        </div>
     </div>
 
     <div class="presentation">

@@ -147,7 +147,7 @@ header h1 {
 }
 
 .title {
-    font-family: 'Minotaur', 'Arial', 'san-serif';
+    font-family: 'Minotaur', 'Courier', 'Arial', 'san-serif';
 }
 
 nav {
@@ -286,6 +286,33 @@ main {
 
 .presentation .title {
     font-size: 1.4em;
+    padding-left: 4px;
+}
+
+#escape {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 5vw;
+}
+
+#escape img {
+    object-fit: contain;
+    padding-right: 5vw;
+}
+
+#escape h3 {
+    font-size: 2em;
+    padding-bottom: 3vh;
+}
+
+
+#escape li {
+    font-size: 1.25em;
+}
+
+#escape strong {
+    font-family: 'Minotaur', 'Courier', 'Arial', 'san-serif';
+    font-size: 1.4em;
 }
 
 .current {
@@ -342,5 +369,16 @@ main {
     .intro h2, .intro h3 {
         font-size: clamp(20px, 4vh, 1000px);
         padding: 4vh 0 2vh 0;
+    }
+
+    #escape {
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    #escape img {
+        height: 50vh;
+        width: 50 vw;
+        padding-bottom: 3vh;
     }
 }

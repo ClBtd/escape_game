@@ -21,7 +21,7 @@ require_once 'functions.php';
             <header>
 
                 <div class="contentWraper">
-                    <img src="img/logo.png" alt="Logo de Dédales du temps">
+                    <img src="img/logo.png" alt="Logo des Dédales du temps">
                     <h1 class="title">les dedales du temps</h1>
                 </div>
 
