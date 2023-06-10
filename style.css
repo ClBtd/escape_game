@@ -204,6 +204,7 @@ li:hover .folded {
 
 footer {
     height: clamp(125px, 15%, 500px);
+    padding-right: 2vw;
 }
 
 footer ul {
@@ -223,9 +224,10 @@ footer a:hover {
 }
 
 .address {
-    padding: 1vmin 10vmin;
+    padding: 1vh 5vw;
     text-align: center;
 }
+
 .contact h1 {
     font-size: clamp(40px, 6vmin, 100px);
 }
@@ -292,7 +294,9 @@ main {
 #escape {
     display: flex;
     justify-content: space-between;
-    padding: 2vh 5vw;
+    margin: 3vh 8vw;
+    padding: 10vh 5vw;
+    background-color: #e4334e;
 }
 
 #escape img {
@@ -305,7 +309,6 @@ main {
     padding-bottom: 3vh;
 }
 
-
 #escape li {
     font-size: 1.25em;
 }
@@ -313,6 +316,60 @@ main {
 #escape strong {
     font-family: 'Minotaur', 'Courier', 'Arial', 'san-serif';
     font-size: 1.4em;
+}
+
+.presentation:last-of-type {
+    padding: 8vh 2vw;
+}
+
+.presentation:last-of-type h3{
+background-color: #bfbabc;
+border-radius: 3px;
+font-size: 3em;
+}
+
+#mission {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.wraper {
+    display: flex;
+}
+
+#mission div {
+    padding: 4vh 2vw;
+}
+
+#mission h4 {
+    font-size: 1.3em;
+    padding: 1vh 0;
+    margin: 0 0 2vh 0;
+}
+
+#mission img {
+    width: 200px;
+    height: 200px;
+}
+
+#mission p {
+    font-size: 1em;
+    text-align: justify;
+    padding-bottom: 1vh;
+    max-width: 40vw;
+}
+
+#mission a {
+    padding: 1vmin;
+    background-color: #bfbabc;
+    border: 2px black solid;
+    border-radius: 2px;
+    font-family: 'Minotaur', 'Rubkik', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1.7em;
 }
 
 .current {
@@ -373,12 +430,16 @@ main {
 
     #escape {
         flex-direction: column;
-        padding-top: 0;
+        padding-top: 5vh;
     }
 
     #escape img {
         height: 50vh;
         width: 50 vw;
         padding-bottom: 3vh;
+    }
+
+    #mission {
+        flex-wrap: wrap;
     }
 }

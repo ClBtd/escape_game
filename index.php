@@ -32,30 +32,32 @@ require_once "elements/header.php";
     </div>
 
     <div class="presentation">
-        <h3>Nos missions</h3>
-        <div>
-            <h4>Le tombeau perdu d'Isis</h4>
-            <img src="img/tombeau.jpg" alt="Déesse de l'Egypte antique">
-            <p>Dans le légendaire tombeau perdu d'Isis, prouvez votre valeur et déjouez les énigmes mortelles de la reine égyptienne pour libérer ses pouvoirs mystiques et échapper avant que les ténèbres ne vous engloutissent.</p>
-            <a href="">Découvrir</a>
-        </div>
-        <div>
-            <h4>La prophétie de l'Ordre du Temple</h4>
-            <img src="img/prophetie.jpg" alt="Heaume de chevalier">
-            <p>Capturés par l'Ordre du Temple en raison d'une prophétie mystérieuse, vous devez résoudre des énigmes ancestrales, percer les secrets de l'Ordre et vous échapper des donjons avant que la prophétie ne s'accomplisse.</p>
-            <a href="">Découvrir</a>
-        </div>
-        <div>
-            <h4>Les mystères du quartier des ombres</h4>
-            <img src="img/quartier.jpg" alt="Ruelle de Londres de nuit">
-            <p>Plongez dans les ténèbres du Londres victorien, traquez un tueur en série redoutable et résolvez des énigmes macabres pour mettre fin à son règne de terreur dans les bas-fonds sinistres de la ville.</p>
-            <a href="">Découvrir</a>
-        </div>
-        <div>
-            <h4>Opération Enigma</h4>
-            <img src="img/enigma.jpg" alt="Poste de commande militaire">
-            <p>Infiltrés chez l'ennemi pendant la Seconde Guerre mondiale, votre équipe de résistants doit trouver des informations vitales et échapper à la capture pour aider à décrypter la redoutable machine Enigma.</p>
-            <a href="">Découvrir</a>
+        <h3 class="title">nos missions</h3>
+        <div id="mission">
+            <div>
+                <h4>Le tombeau perdu d'Isis</h4>
+                <img src="img/tombeau.jpg" alt="Déesse de l'Egypte antique">
+                <p>Dans le légendaire tombeau perdu d'Isis, prouvez votre valeur et déjouez les énigmes mortelles de la reine égyptienne pour libérer ses pouvoirs mystiques et vous échapper avant que les ténèbres ne vous engloutissent.</p>
+                <a href="mission.php#tombeau">decouvrir</a>
+            </div>
+            <div>
+                <h4>La prophétie de l'Ordre du Temple</h4>
+                <img src="img/prophetie.jpg" alt="Heaume de chevalier">
+                <p>Capturés par l'Ordre du Temple en raison d'une prophétie mystérieuse, vous devez résoudre des énigmes ancestrales, percer les secrets de l'Ordre et vous échapper des donjons avant que la prophétie ne s'accomplisse.</p>
+                <a href="">decouvrir</a>
+            </div>
+            <div>
+                <h4>Les mystères du quartier des ombres</h4>
+                <img src="img/quartier.jpg" alt="Ruelle de Londres de nuit">
+                <p>Plongez dans les ténèbres du Londres victorien, traquez un tueur en série redoutable et résolvez des énigmes macabres pour mettre fin à son règne de terreur dans les bas-fonds sinistres de la ville.</p>
+                <a href="">decouvrir</a>
+            </div>
+            <div>
+                <h4>Opération Enigma</h4>
+                <img src="img/enigma.jpg" alt="Poste de commande militaire">
+                <p>Infiltrés chez l'ennemi pendant la Seconde Guerre mondiale, votre équipe de résistants doit trouver des informations vitales et échapper à la capture pour aider à décrypter la redoutable machine Enigma.</p>
+                <a href="">decouvrir</a>
+            </div>
         </div>
     </div>
 
