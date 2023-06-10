@@ -319,13 +319,14 @@ main {
 }
 
 .presentation:last-of-type {
-    padding: 8vh 2vw;
+    padding: 12vh 2vw;
 }
 
 .presentation:last-of-type h3{
 background-color: #bfbabc;
 border-radius: 3px;
 font-size: 3em;
+margin-bottom: 3vh;
 }
 
 #mission {
@@ -336,12 +337,8 @@ font-size: 3em;
     padding: 0;
 }
 
-.wraper {
-    display: flex;
-}
-
 #mission div {
-    padding: 4vh 2vw;
+    padding: 4vh 1.6vw;
 }
 
 #mission h4 {
@@ -370,6 +367,49 @@ font-size: 3em;
     font-family: 'Minotaur', 'Rubkik', Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: 1.7em;
+}
+
+.presentation h1 {
+    padding-top: 5vh;
+    font-size: 2em;
+}
+
+#room_presentation {
+    padding-bottom: 0;
+}
+
+.room {
+    padding: 13vh 3vw 0 3vw;
+}
+
+.room h2 {
+    font-family: 'Minotaur', 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 2.8em;
+    text-align: center;
+}
+
+.room p {
+    padding: 10vh 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    text-align: justify;
+}
+
+.room img {
+    padding-right: 8vh;
+}
+
+.room br {
+    margin: 10px 0;
+}
+
+.room ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
+    background-color: e4334e;
 }
 
 .current {

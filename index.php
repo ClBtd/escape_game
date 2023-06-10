@@ -44,19 +44,19 @@ require_once "elements/header.php";
                 <h4>La prophétie de l'Ordre du Temple</h4>
                 <img src="img/prophetie.jpg" alt="Heaume de chevalier">
                 <p>Capturés par l'Ordre du Temple en raison d'une prophétie mystérieuse, vous devez résoudre des énigmes ancestrales, percer les secrets de l'Ordre et vous échapper des donjons avant que la prophétie ne s'accomplisse.</p>
-                <a href="">decouvrir</a>
+                <a href="mission.php#prophetie">decouvrir</a>
             </div>
             <div>
                 <h4>Les mystères du quartier des ombres</h4>
                 <img src="img/quartier.jpg" alt="Ruelle de Londres de nuit">
                 <p>Plongez dans les ténèbres du Londres victorien, traquez un tueur en série redoutable et résolvez des énigmes macabres pour mettre fin à son règne de terreur dans les bas-fonds sinistres de la ville.</p>
-                <a href="">decouvrir</a>
+                <a href="mission.php#quartier">decouvrir</a>
             </div>
             <div>
                 <h4>Opération Enigma</h4>
                 <img src="img/enigma.jpg" alt="Poste de commande militaire">
                 <p>Infiltrés chez l'ennemi pendant la Seconde Guerre mondiale, votre équipe de résistants doit trouver des informations vitales et échapper à la capture pour aider à décrypter la redoutable machine Enigma.</p>
-                <a href="">decouvrir</a>
+                <a href="mission.php#enigma">decouvrir</a>
             </div>
         </div>
     </div>
