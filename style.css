@@ -242,7 +242,8 @@ footer a:hover {
 
 main {
     padding-top: clamp(50px, 12vh, 500px);
-    background-color: #faf2e7;
+    padding-bottom: 12vh;
+    background-color: white;
 }
 
 .intro {
@@ -296,7 +297,7 @@ main {
     justify-content: space-between;
     margin: 3vh 8vw;
     padding: 10vh 5vw;
-    background-color: #e4334e;
+    background-color: #aa210f;
 }
 
 #escape img {
@@ -319,7 +320,7 @@ main {
 }
 
 .presentation:last-of-type {
-    padding: 12vh 2vw;
+    padding: 12vh 2vw 0 2vw;
 }
 
 .presentation:last-of-type h3{
@@ -379,17 +380,19 @@ margin-bottom: 3vh;
 }
 
 .room {
-    padding: 13vh 3vw 0 3vw;
+    padding: 13vh 3vw 5vh 3vw;
 }
 
 .room h2 {
     font-family: 'Minotaur', 'Raleway', Arial, Helvetica, sans-serif;
-    font-size: 2.8em;
+    font-size: 3.2em;
     text-align: center;
+    text-shadow: 3px 3px 5px grey;
+    padding-bottom: 3vh;
 }
 
 .room p {
-    padding: 10vh 0;
+    padding: 5vh 0;
     display: flex;
     align-items: center;
     font-size: 1.2em;
@@ -407,9 +410,41 @@ margin-bottom: 3vh;
 
 .room ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-bottom: 5vh;
-    background-color: e4334e;
+    background-color: #aa210f;
+    color: white;
+    padding: 2vh 5vh;
+}
+
+.room li strong {
+    font-size: 1em;
+}
+
+.room li {
+    font-size: 1.4em;
+}
+
+.room h3 {
+    text-align: center;
+    font-size: 1.7em;
+    padding-bottom: 2vh;
+}
+
+.room table {
+    width: 100%;
+    padding: 2vh;
+    border: 2px black solid;
+    box-shadow: 5px 5px 10px black;
+}
+
+.room td {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.players {
+    font-weight: bold;
 }
 
 .current {
@@ -481,5 +516,22 @@ margin-bottom: 3vh;
 
     #mission {
         flex-wrap: wrap;
+    }
+
+    .room p {
+        flex-direction: column;
+    }
+
+    .room img {
+        padding: 0 0 5vh 0;
+    }
+
+    .room ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .room li {
+        padding: 1vh 0;
     }
 }

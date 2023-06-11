@@ -30,7 +30,7 @@ require_once 'elements/header.php';
         <table>
             <tr>
                 <?php foreach (PRICE["tombeau"] as $players => $individual_price) : ?>
-                <td><?= $players ?> joueurs</td>
+                <td class="players"><?= $players ?> joueurs</td>
                 <?php endforeach; ?>
             </tr>
             <tr>
@@ -59,7 +59,7 @@ require_once 'elements/header.php';
         <table>
             <tr>
                 <?php foreach (PRICE["prophetie"] as $players => $individual_price) : ?>
-                <td><?= $players ?> joueurs</td>
+                <td class="players"><?= $players ?> joueurs</td>
                 <?php endforeach; ?>
             </tr>
             <tr>
@@ -89,7 +89,7 @@ require_once 'elements/header.php';
         <table>
             <tr>
                 <?php foreach (PRICE["quartier"] as $players => $individual_price) : ?>
-                <td><?= $players ?> joueurs</td>
+                <td class="players"><?= $players ?> joueurs</td>
                 <?php endforeach; ?>
             </tr>
             <tr>
@@ -118,7 +118,7 @@ require_once 'elements/header.php';
         <table>
             <tr>
                 <?php foreach (PRICE["enigma"] as $players => $individual_price) : ?>
-                <td><?= $players ?> joueurs</td>
+                <td class="players"><?= $players ?> joueurs</td>
                 <?php endforeach; ?>
             </tr>
             <tr>
