@@ -246,6 +246,12 @@ main {
     background-color: white;
 }
 
+main h1 {
+    padding-top: 5vh;
+    font-size: 3em;
+    text-align: center;
+}
+
 .intro {
     background-image: url('img/cellar.jpg');
     background-size: cover;
@@ -370,11 +376,6 @@ margin-bottom: 3vh;
     font-size: 1.7em;
 }
 
-.presentation h1 {
-    padding-top: 5vh;
-    font-size: 2em;
-}
-
 #room_presentation {
     padding-bottom: 0;
 }
@@ -445,6 +446,48 @@ margin-bottom: 3vh;
 
 .players {
     font-weight: bold;
+}
+
+.infos {
+    padding: 13vh 0 0 0;
+}
+
+.infos h2 {
+    font-size: 3em;
+    font-family: 'Minotaur', 'Raleway', Arial, Helvetica, sans-serif;
+    padding: 0 10vw;
+}
+
+.infos h3 {
+    font-size: 1.5em;
+    padding: 2vh 2vw;
+}
+
+.localisation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.localisation li {
+    display: flex;
+    align-items: center;
+    padding: 3vh 0;
+}
+
+.localisation img {
+    object-fit: contain;
+    padding-right: 2vw;
+}
+
+.localisation p {
+    font-size: 1.1em;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .current {
