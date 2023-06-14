@@ -70,20 +70,7 @@ if (isset($_GET["mission"]) && isset($_GET["players"])) {
     </div>
 
     <div id="contact" class="infos">
-        <h2>Nous contacter</h2>
-        <div>
-                        <h3>Horaires</h3>
-                        <ul>
-                            <?php foreach (DAYS as $key => $day) : 
-                                if ($key === $current_day) : ?>
-                                    <li><mark><?= $day ?> : <?=show_time(TIME[$key])?></mark></li>
-                                <?php else : ?>
-                                    <li><?= $day ?> : <?=show_time(TIME[$key])?></li>
-                                <?php endif ;
-                            endforeach ; ?>
-                        </ul>
-                    </div>
-                    <img src="img/time.png" alt="Pictogramme horloge">
+        <h2>nous contacter</h2>
         <p>Vous souhaitez réserver une session ? Vous souhaitez organiser un évènement dans nos salles ? Vous avez une question ou une remarque ? N'hésitez pas à nous contacter, nous reviendrons vers vous le plus rapidement possible.</p>
         <form action="info.php#contact" method="post">
             <label for="name">Votre nom :</label>
@@ -96,17 +83,33 @@ if (isset($_GET["mission"]) && isset($_GET["players"])) {
             <input type="tel" name="phone" id="phone">
             <br>
             <label for="message">Votre message :</label>
-            <textarea name="message" id="message" cols="100" rows="5"></textarea>
+            <br>
+            <textarea name="message" id="message" cols="50" rows="5"></textarea>
             <br>
             <button type="submit">Envoyer</button>
         </form>
         <?php if (isset($message)) : ?>
-            <p><?= $message ?></p>
+            <p><strong><?= $message ?></strong></p>
         <?php endif; ?>
     </div>
 
     <div id="tarifs" class="infos">
-        <h2>Tarifs</h2>
+        <h2>horaires et tarifs</h2>
+        <div>
+                <div class="time">
+                    <img src="img/time.png" alt="Pictogramme horloge">
+                    <h3>Horaires</h3>
+                </div>
+                <ul>
+                    <?php foreach (DAYS as $key => $day) : 
+                        if ($key === $current_day) : ?>
+                            <li><mark><?= $day ?> : <?=show_time(TIME[$key])?></mark></li>
+                        <?php else : ?>
+                            <li><?= $day ?> : <?=show_time(TIME[$key])?></li>
+                        <?php endif ;
+                    endforeach ; ?>
+                </ul>
+        </div>
         <p>Nos tarifs varient en fonction de la durée de la mission et du nombre de joueurs. Plus vous êtes nombreux et moins c'est cher ! Choisissez la mission qui vous intéresse et le nombre de personnes afin d'en connaitre le prix.</p>
         <form action="info.php#tarifs" method="get">
             <label for="mission">Choisissez la mission qui vous intéresse :</label>

@@ -57,7 +57,7 @@ require_once 'functions.php';
                                     <a href="info.php#contact">Nous contacter</a>
                                 </li>
                                 <li>
-                                    <a href="info.php#tarifs">Tarifs</a>
+                                    <a href="info.php#tarifs">Horaires et tarifs</a>
                                 </li>
                             </ul>
                         </li>

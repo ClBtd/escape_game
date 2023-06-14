@@ -484,10 +484,48 @@ margin-bottom: 3vh;
     font-size: 1.1em;
 }
 
-.time {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#contact p {
+    padding: 8vh 8vw;
+    font-size: 1.2em;
+}
+
+#contact form {
+    padding: 0 10vw;
+}
+
+#contact label {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+#contact input {
+    margin: 2vh 0 4vh; 
+    border: 1px grey solid;
+    border-radius: 3px;
+}
+
+#contact textarea {
+    margin: 3vh 3vw;
+    border: 1px grey solid;
+    border-radius: 5px;
+}
+
+#contact button {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 5vh 0;
+    padding: 1vmin;
+    background-color: #bfbabc;
+    border: 2px black solid;
+    border-radius: 5px;
+}
+
+#contact p:nth-of-type(2) {
+    padding: 2vh 5vw;
+}
+
+#contact strong {
+    font-size: 1.2em;
 }
 
 .current {
@@ -576,5 +614,20 @@ margin-bottom: 3vh;
 
     .room li {
         padding: 1vh 0;
+    }
+
+    .localisation {
+        flex-direction: column;
+        padding: 5vh 5vw;
+    }
+
+    .localisation ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    iframe {
+        padding: 5vh 0 0 5vw;
     }
 }
