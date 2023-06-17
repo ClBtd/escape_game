@@ -28,32 +28,33 @@ if (authentification()) {
 ?>
 <main>
 
-    <h1>Authentification</h1>
+    <h1 class="login">Authentification</h1>
 
-    <p>Pour accéder aux classements, veuillez sélectionnez la mission à laquelle vous avez participé. Puis, entrez votre nom d'équipe et le code qui vous a été fourni.</p>
+    <div class="login">
+        <p>Pour accéder aux classements, veuillez sélectionnez la mission à laquelle vous avez participé. Puis, entrez votre nom d'équipe et le code qui vous a été fourni.</p>
 
-    <?php if ($error !== NULL) : ?>
-        <p>Nom d'équipe et/ou code incorrect. Veuillez réessayer.</p>
-    <?php endif; ?>
+        <?php if ($error !== NULL) : ?>
+            <p>Nom d'équipe et/ou code incorrect. Veuillez réessayer.</p>
+        <?php endif; ?>
 
-    <form method="post" action="">
-        <label for="mission">Mission :</label>
-            <select name="mission" id="mission">
-                <option value="tombeau">Le tombeau perdu d'Isis</option>
-                <option value="prophetie">La prophétie de l'Ordre du Temple</option>
-                <option value="quartier">Les mystères du quartier des ombres</option>
-                <option value="enigma">Opération Enigma</option>
-            </select>
-        <br>
-        <label for="identifiant">Nom d'équipe : </label>
-        <input type="text" name="identifiant" id="identifiant" required>
-        <br>
-        <label for="password">Code :</label>
-        <input type="password" name="password" id="password" required>
-        <br>
-        <button type="submit">Envoyer</button>
-    </form>
-
+        <form method="post" action="">
+            <label for="mission_choice">Mission :</label>
+                <select name="mission" id="mission_choice">
+                    <option value="tombeau">Le tombeau perdu d'Isis</option>
+                    <option value="prophetie">La prophétie de l'Ordre du Temple</option>
+                    <option value="quartier">Les mystères du quartier des ombres</option>
+                    <option value="enigma">Opération Enigma</option>
+                </select>
+            <br>
+            <label for="identifiant">Nom d'équipe : </label>
+            <input type="text" name="identifiant" id="identifiant" required>
+            <br>
+            <label for="password">Code :</label>
+            <input type="password" name="password" id="password" required>
+            <br>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
 </main>
 
 <?php require 'elements/footer.php'; ?>

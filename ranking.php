@@ -10,7 +10,7 @@ $enigma = ranking(file(__DIR__ . DIRECTORY_SEPARATOR . 'data' . DIRECTORY_SEPARA
 require 'elements/header.php';
 ?>
 
-<main>
+<main class="mission_ranking">
 
     <h1>Classements</h1>
 
@@ -19,7 +19,7 @@ require 'elements/header.php';
             <a href="#tombeau">Le tombeau perdu d'Isis</a>
         </li>
         <li>
-            <a href="#propethie">La prophétie de l'Ordre du Temple</a>
+            <a href="#prophetie">La prophétie de l'Ordre du Temple</a>
         </li>
         <li>
             <a href="#quartier">Les mystères du quartier des ombres</a>
@@ -27,64 +27,80 @@ require 'elements/header.php';
         <li>
             <a href="#enigma">Opération Enigma</a>
         </li>
-        <li>
+        <li id="logout">
             <a href="logout.php">Se déconnecter</a>
         </li>
     </ul>
     
     <div id="tombeau">
-        <h2>Le tombeau perdu d'Isis</h2>
+        <h2 class="title">le tombeau perdu d'isis</h2>
         <table>
-            <tr>
-                <td>Rang</td>
-                <td>Equipe</td>
-                <td>Temps</td>
-            </tr>
-            <?php foreach ($tombeau as $k => $rank) {
-                echo ranking_table($k, $rank, $_SESSION['team_name']); 
-            } ?>
+            <thead>
+                <tr>
+                    <td>Rang</td>
+                    <td>Equipe</td>
+                    <td>Temps</td>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($tombeau as $k => $rank) {
+                    echo ranking_table($k, $rank, $_SESSION['team_name']); 
+                } ?>
+            </tbody>
         </table>
     </div>
 
     <div id="prophetie">
-        <h2>La prophétie de l'Ordre du Temple</h2>
+        <h2 class="title">la prophetie de l'ordre du temple</h2>
         <table>
-            <tr>
-                <td>Rang</td>
-                <td>Equipe</td>
-                <td>Temps</td>
-            </tr>
-            <?php foreach ($prophetie as $k => $rank) {
-                echo ranking_table($k, $rank, $_SESSION['team_name']); 
-            } ?>
+            <thead>
+                <tr>
+                    <td>Rang</td>
+                    <td>Equipe</td>
+                     <td>Temps</td>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($prophetie as $k => $rank) {
+                    echo ranking_table($k, $rank, $_SESSION['team_name']); 
+                } ?>
+            </tbody>
         </table>
     </div>
 
     <div id="quartier">
-        <h2>Les mystères du quartier des ombres</h2>
+        <h2 class="title">les mysteres du quartier des ombres</h2>
         <table>
-            <tr>
-                <td>Rang</td>
-                <td>Equipe</td>
-                <td>Temps</td>
-            </tr>
-            <?php foreach ($quartier as $k => $rank) {
-                echo ranking_table($k, $rank, $_SESSION['team_name']); 
-            } ?>
+            <thead>
+                <tr>
+                    <td>Rang</td>
+                    <td>Equipe</td>
+                    <td>Temps</td>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($quartier as $k => $rank) {
+                    echo ranking_table($k, $rank, $_SESSION['team_name']); 
+                } ?>
+            </tbody>
         </table>
     </div>
 
     <div id="enigma">
-        <h2>Opération Enigma</h2>
+        <h2 class="title">operation enigma</h2>
         <table>
-            <tr>
-                <td>Rang</td>
-                <td>Equipe</td>
-                <td>Temps</td>
-            </tr>
-            <?php foreach ($enigma as $k => $rank) {
-                echo ranking_table($k, $rank, $_SESSION['team_name']); 
-            } ?>
+            <thead>
+                <tr>
+                    <td>Rang</td>
+                    <td>Equipe</td>
+                    <td>Temps</td>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($enigma as $k => $rank) {
+                    echo ranking_table($k, $rank, $_SESSION['team_name']); 
+                } ?>
+            </tbody>
         </table>
     </div>
 

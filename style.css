@@ -590,20 +590,108 @@ select {
     text-align: center;
 }
 
+.login h1 {
+    margin-top: 3vh;
+}
+
+.login {
+    padding: 5vh 8vw;
+}
+
+.login p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.login form {
+    padding-left: 2vw;
+}
+
+.login input {
+    margin: 2vh 2vw;
+}
+
+.mission_ranking h1 {
+    margin-top: 3vh;
+}
+
+.mission_ranking ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 6vh 0 2vh 0;
+    padding: 2vh 0;
+    background-color: #aa210f;
+}
+
+.mission_ranking li {
+    border-radius: 5px;
+    padding: 1vmin;
+}
+
+.mission_ranking a {
+    font-size: 1.3em;
+    color: white;
+    font-weight: 500;
+}
+
+.mission_ranking div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.mission_ranking h2 {
+    font-size: 3em;
+    margin: 8vh 0;
+}
+
+.mission_ranking table {
+    width: 90%;
+    padding: 2vh 5vw;
+    border: 2px black solid;
+    box-shadow: 5px 5px 10px black;
+    background-color: #f6e0b5;
+}
+
+thead td {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+thead {
+    padding: 2vh 0;
+}
+
+.mission_ranking td {
+    font-size: 1.5em;
+    margin: 0.7h 0;
+    padding: 0.8vh 1vw;
+    text-align: center;
+}
+
+.strong {
+    font-weight: 500;
+}
+
+#logout {
+    background-color: #8b8988;
+}
+
 .current {
-    color:red;
+    background-color: #ff6961;
 }
 
 .first {
-    color: gold;
+    background-color: gold;
 }
 
 .second {
-    color: grey;
+    background-color: silver;
 }
 
 .third {
-    color: brown;
+    background-color: #cd7f32;
 }
 
 

@@ -64,16 +64,16 @@ function ranking_table (int $k, array $rank, string $current_team) : string {
     else {
         switch ($team_rank):
             case 1:
-                $html = '<tr class="first"><td>'. $team_rank .'</td><td>' . $team_name . '</td><td>' . $team_time . '</td></tr>';
+                $html = '<tr class="first"><td>'. $team_rank .'</td><td class="strong">' . $team_name . '</td><td>' . $team_time . '</td></tr>';
                 break;
             case 2:
-                $html = '<tr class="second"><td>'. $team_rank .'</td><td>' . $team_name . '</td><td>' . $team_time . '</td></tr>';
+                $html = '<tr class="second"><td>'. $team_rank .'</td><td class="strong">' . $team_name . '</td><td>' . $team_time . '</td></tr>';
                 break;
             case 3:
-                $html = '<tr class="third"><td>'. $team_rank .'</td><td>' . $team_name . '</td><td>' . $team_time . '</td></tr>';
+                $html = '<tr class="third"><td>'. $team_rank .'</td><td class="strong">' . $team_name . '</td><td>' . $team_time . '</td></tr>';
                 break;
             default:
-                $html = '<tr><td>'. $team_rank .'</td><td>' . $team_name . '</td><td>' . $team_time . '</td></tr>';
+                $html = '<tr><td>'. $team_rank .'</td><td class="strong">' . $team_name . '</td><td>' . $team_time . '</td></tr>';
             endswitch;
     }
 
