@@ -792,4 +792,9 @@ thead {
     .time {
         padding-bottom: 15vh;
     }
+
+    .mission_ranking ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }

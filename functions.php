@@ -1,13 +1,14 @@
 <?php 
+
+function total_price (int $players, int $individual_price) : int {
+    return $players * $individual_price;
+}
+
 function show_time (array $time) : string {
     if (empty($time)) {
         return "Fermé";
     }
     return $current_time = "$time[0]h - $time[1]h"; 
-}
-
-function total_price (int $players, int $individual_price) : int {
-    return $players * $individual_price;
 }
 
 function authentification () : bool {
@@ -28,27 +29,6 @@ function ranking (array $ranking) : array {
         $ranking[$k]= (explode("\t", trim($rank)));
     }
     return $ranking;
-}
-
-function hour_minute (float $time) : string {
-
-    $min_sec = explode('.', $time);
-    $hour= intdiv($min_sec[0], 60);
-    $minute = fmod($min_sec[0], 60);
-    
-    if (empty($min_sec[1])) {
-        $second = '00'; 
-    }
-    else {
-        $second = $min_sec[1];
-    }
-
-    if ($hour === 0) {
-        return "$minute min $second";
-    }
-    else {
-        return "$hour h $minute min $second";
-    }
 }
 
 function ranking_table (int $k, array $rank, string $current_team) : string {
@@ -78,4 +58,25 @@ function ranking_table (int $k, array $rank, string $current_team) : string {
     }
 
     return $html; 
+}
+
+function hour_minute (float $time) : string {
+
+    $min_sec = explode('.', $time);
+    $hour= intdiv($min_sec[0], 60);
+    $minute = fmod($min_sec[0], 60);
+    
+    if (empty($min_sec[1])) {
+        $second = '00'; 
+    }
+    else {
+        $second = $min_sec[1];
+    }
+
+    if ($hour === 0) {
+        return "$minute min $second";
+    }
+    else {
+        return "$hour h $minute min $second";
+    }
 }

@@ -26,7 +26,7 @@ if (isset($_GET["mission"]) && isset($_GET["players"])) {
     } 
 
     else {
-        $total_price = $individual_price * $players;
+        $total_price = total_price($individual_price, $players);
     }
 
 }

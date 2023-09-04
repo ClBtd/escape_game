@@ -31,6 +31,8 @@ if (authentification()) {
     <h1 class="login">Authentification</h1>
 
     <div class="login">
+
+        <p>Cette partie du site n'est accessible qu'aux joueurs ayant déjà effectué au moins une mission dans nos salles.</p>
         <p>Pour accéder aux classements, veuillez sélectionnez la mission à laquelle vous avez participé. Puis, entrez votre nom d'équipe et le code qui vous a été fourni.</p>
 
         <?php if ($error !== NULL) : ?>
